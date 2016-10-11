@@ -18,5 +18,12 @@ const POKEMONS: Pokemon[] =
 export class AppComponent {
 
   title = 'Tour of Pokemons';
+
   pokemons = POKEMONS;
+
+  selectedPokemon = Pokemon;
+
+  onSelect(pokemon: Pokemon): void {
+    this.selectedPokemon = pokemon;
+  }
 }

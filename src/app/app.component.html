@@ -1,14 +1,14 @@
 <h1>
   {{title}}
 </h1>
-<p>
-  Pokemons details!
-</p>
-<ul class="heroes">
-  <li *ngFor="let pokemon of pokemons">
-    <span class="badge">{{pokemon.id}}</span>
-    {{pokemon.name}} /
-    {{pokemon.categoria}} /
-    {{pokemon.nivel}}<br/>
-  </li>
-</ul>
+
+
+<div>
+  <ul class="heroes">
+    <li *ngFor="let pokemon of pokemons" (click)="onSelect(pokemon)">
+      <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
+    </li>
+  </ul>
+  <app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
+</div>
+
