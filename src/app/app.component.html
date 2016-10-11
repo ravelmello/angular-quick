@@ -6,9 +6,9 @@
 </p>
 <ul class="heroes">
   <li *ngFor="let pokemon of pokemons">
-    <span class="badge">ID: </span>{{pokemon.id}}<br/>
-    <span class="badge">Name: </span>{{pokemon.name}}<br/>
-    <span class="badge">Name: </span>{{pokemon.categoria}}<br/>
-    <span class="badge">Name: </span>{{pokemon.nivel}}<br/>
+    <span class="badge">{{pokemon.id}}</span>
+    {{pokemon.name}} /
+    {{pokemon.categoria}} /
+    {{pokemon.nivel}}<br/>
   </li>
 </ul>
