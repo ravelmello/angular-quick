@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Pokemon } from "./Model/pokemon"
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Tour of Pokemons';
+  pokemon: Pokemon = {
+    id:1,
+    name: 'Bubasaur',
+    categoria: 'Plant',
+    nivel: 1
+  }
 }
