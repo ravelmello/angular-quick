@@ -2,10 +2,13 @@
   {{title}}
 </h1>
 <p>
-  {{pokemon.name}} details!
+  Pokemons details!
 </p>
-<ul>
-  <li>Number: {{pokemon.id}}</li>
-  <li>Category: {{pokemon.categoria}}</li>
-  <li>Evolution: {{pokemon.nivel}}</li>
+<ul class="heroes">
+  <li *ngFor="let pokemon of pokemons">
+    <span class="badge">ID: </span>{{pokemon.id}}<br/>
+    <span class="badge">Name: </span>{{pokemon.name}}<br/>
+    <span class="badge">Name: </span>{{pokemon.categoria}}<br/>
+    <span class="badge">Name: </span>{{pokemon.nivel}}<br/>
+  </li>
 </ul>

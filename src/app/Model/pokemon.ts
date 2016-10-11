@@ -1,6 +1,8 @@
 export class Pokemon {
-  id: number;
-  name: string;
-  categoria: string;
-  nivel: number;
+  private id: number;
+  private name: string;
+  private categoria: string;
+  private nivel: number;
+
 }
+
